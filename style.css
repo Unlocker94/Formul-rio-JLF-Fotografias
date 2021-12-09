@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  text-transform: uppercase; /*uppercase deixa tudo maiusculo*/ 
+  font-weight: bold; /* bolt deixa a fonte em negrito */
+  text-align: center; 
+  padding-bottom: 10px; 
+  letter-spacing: 2px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg,	#00FFFF, #040005);
+}
+
+.register-form{
+  max-width: 100%;
+  width: 100%;
+  right: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  align-content: center;
+  justify-content: center;
+  align-items: center; 
+}
+
+.register-form .title-register{
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+  position: relative;
+}
+
+.register-content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+select{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #8b0000;
+}
+
+form .button{
+  height: 45px;
+  margin: 35px 0;
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, 	#00FFFF, #040005);
+}
+
+form .button input:hover{
+ background: linear-gradient(-135deg, white, 	#00FFFF);
+ color: #040005;
+ }
+
+ @media(max-width: 584px) {
+   .register-form {
+     max-width: 100%;
+   }
+   form .user-details .input-box {
+     margin-bottom: 15px;
+     width: 100%;
+     
+   }
+ }
